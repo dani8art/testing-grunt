@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - "6"
+
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t darteaga/testing-grunt .
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push darteaga/testing-grunt;
