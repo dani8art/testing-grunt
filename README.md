@@ -1,5 +1,7 @@
 # Testing grunt
 
+[![Build Status](https://travis-ci.org/dani8art/testing-grunt.svg?branch=master)](https://travis-ci.org/dani8art/testing-grunt)
+
 This project contains a sample node project for testing and learning [Grunt](http://gruntjs.com/).
 
 ## Tested Plugin
