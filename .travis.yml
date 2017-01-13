@@ -14,7 +14,9 @@ before_script:
 script:
   - npm test
 
-# after_success:
-#   - docker build -t darteaga/testing-grunt .
-#   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-#   - docker push darteaga/testing-grunt
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker build -t darteaga/testing-grunt .;
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push darteaga/testing-grunt;
+    fi
