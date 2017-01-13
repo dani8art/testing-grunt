@@ -14,6 +14,7 @@ var winston = require('winston');
 // learning github flow, create brach and commit
 // more commit
 // testing travis
+// testing travis 01
 var configString = fs.readFileSync('./config/config.yaml', 'utf8');
 /** Properties dynamically acquired by a YAML file. */
 var config = jsyaml.safeLoad(configString)[process.env.NODE_ENV ? process.env.NODE_ENV : 'development'];
