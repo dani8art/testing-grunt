@@ -14,6 +14,6 @@ before_script:
 after_script:
   - docker build -t darteaga/testing-grunt .
 
-after_seccess:
+after_success:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker push darteaga/testing-grunt
