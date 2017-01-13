@@ -11,7 +11,10 @@ services:
 before_script:
   - npm install grunt-cli -g
 
-after_success:
-  - docker build -t darteaga/testing-grunt .
-  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker push darteaga/testing-grunt
+script:
+  - npm test
+
+# after_success:
+#   - docker build -t darteaga/testing-grunt .
+#   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+#   - docker push darteaga/testing-grunt
