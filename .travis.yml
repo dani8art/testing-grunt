@@ -8,7 +8,10 @@ sudo: required
 services:
   - docker
 
-after_install:
+before_script:
+  - npm install grunt-cli -g
+  
+after_script:
   - docker build -t darteaga/testing-grunt .
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker push darteaga/testing-grunt;
