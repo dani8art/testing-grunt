@@ -1,6 +1,6 @@
 {
   "name": "registry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "test project for testing gulp and grunt",
   "main": "index.js",
   "dependencies": {},
