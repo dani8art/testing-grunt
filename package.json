@@ -1,29 +1,29 @@
 {
-  "name": "registry",
-  "version": "1.0.1",
-  "description": "test project for testing gulp and grunt",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "grunt": "^1.0.1",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-mocha-test": "^0.13.2",
-    "grunt-release": "^0.14.0",
-    "gulp": "^3.9.1",
-    "gulp-header-license": "^1.0.9",
-    "js-minify": "^0.1.5",
-    "jshint-stylish": "^2.2.1",
-    "mocha": "^3.2.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "test"
-  ],
-  "author": "ISA group (isagroup.us@gmail.com)",
-  "license": "GPLv3"
+    "name": "registry",
+    "version": "1.0.1",
+    "description": "test project for testing gulp and grunt",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "grunt": "^1.0.1",
+        "grunt-contrib-jshint": "^1.1.0",
+        "grunt-contrib-uglify": "^2.0.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-mocha-test": "^0.13.2",
+        "grunt-release": "^0.14.0",
+        "gulp": "^3.9.1",
+        "gulp-header-license": "^1.0.9",
+        "js-minify": "^0.1.5",
+        "jshint-stylish": "^2.2.1",
+        "mocha": "^3.2.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "test"
+    ],
+    "author": "ISA group (isagroup.us@gmail.com)",
+    "license": "GPL-3.0+"
 }
