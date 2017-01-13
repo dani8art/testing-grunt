@@ -11,6 +11,8 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-mocha-test');
 
+    grunt.loadNpmTasks('grunt-release');
+
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -69,6 +71,22 @@ module.exports = function (grunt) {
                 src: ['tests/**/*.js']
             }
         },
+        release: {
+            options: {
+                changelog: true, //default: false
+                npm: false, //default: true
+                beforeBump: [], // optional grunt tasks to run before file versions are bumped
+                afterBump: [], // optional grunt tasks to run after file versions are bumped
+                beforeRelease: ['setGitHubToken'], // optional grunt tasks to run after release version is bumped up but before release is packaged
+                afterRelease: [], // optional grunt tasks to run after release is packaged
+                updateVars: [], // optional grunt config objects to update (this will update/set the version property on the object specified)
+                github: {
+                    apiRoot: "https://git.example.com/v3",
+                    repo: "dani8art/testing-grunt",
+                    accessTokenVar: "GITHUB_ACCESS_TOKE"
+                }
+            }
+        },
         watch: {
             scripts: {
                 files: ['app/*.js'],
@@ -84,5 +102,10 @@ module.exports = function (grunt) {
     grunt.registerTask('build', ['jshint', 'mochaTest', 'uglify']);
 
     grunt.registerTask('dev', ['watch']);
+
+    //my tasks
+    grunt.registerTask('setGitHubToken', 'Set up github token', function () {
+        process.env["GITHUB_ACCESS_TOKE"] = grunt.file.readJSON('githubCredential.json').accessToken;
+    });
 
 };
