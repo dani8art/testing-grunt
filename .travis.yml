@@ -8,7 +8,7 @@ sudo: required
 services:
   - docker
 
-before_install:
+after_install:
   - docker build -t darteaga/testing-grunt .
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker push darteaga/testing-grunt;
