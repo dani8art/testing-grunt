@@ -1,5 +1,5 @@
 'use strict';
-
+var milestones = require('./app/generateChangeLog.js');
 module.exports = function (grunt) {
 
     // Load the plugin that provides the "uglify" task.
@@ -11,7 +11,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-mocha-test');
 
-    grunt.loadNpmTasks('grunt-release');
+    grunt.loadNpmTasks('grunt-release-github');
 
     // Project configuration.
     grunt.initConfig({
@@ -74,6 +74,8 @@ module.exports = function (grunt) {
         release: {
             options: {
                 changelog: true, //default: false
+                changelogFromGithub: true,
+                //changelogText: '\nhello\n <%= grunt.config.get("pkg.changelog") %>',
                 npm: false, //default: true
                 //npmtag: true, //default: no tag
                 beforeBump: [], // optional grunt tasks to run before file versions are bumped
