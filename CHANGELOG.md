@@ -1,3 +1,4 @@
+### 1.2.0 - 2017-01-18
 1.0.11### v1.2.0 - 2017-01-18
 
 - [#14](https://github.com/dani8art/testing-grunt/issues/14) - node app which gets milestone and its issues
