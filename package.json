@@ -15,6 +15,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-mocha-test": "^0.13.2",
     "grunt-release": "^0.14.0",
+    "grunt-release-github": "0.0.1",
     "gulp": "^3.9.1",
     "gulp-header-license": "^1.0.9",
     "js-minify": "^0.1.5",
