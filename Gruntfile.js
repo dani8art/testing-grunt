@@ -75,6 +75,7 @@ module.exports = function (grunt) {
             options: {
                 changelog: true, //default: false
                 changelogFromGithub: true,
+                githubReleaseBody: 'See [CHANGELOG.md](./CHANGELOG.md) for details.',
                 //changelogText: '\nhello\n <%= grunt.config.get("pkg.changelog") %>',
                 npm: false, //default: true
                 //npmtag: true, //default: no tag
