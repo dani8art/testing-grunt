@@ -1,3 +1,7 @@
+### v1.10.2 - 2017-01-23
+
+- [#18](https://github.com/dani8art/testing-grunt/issues/18) - Test issue for v1.10.2
+
 Unexpected error.### v1.10.0 - 2017-01-18
 
 - [#16](https://github.com/dani8art/testing-grunt/issues/16) - test
