@@ -1,3 +1,7 @@
+### v1.10.5 - 2017-01-23
+
+- [#21](https://github.com/dani8art/testing-grunt/issues/21) - Test issue for v1.10.5
+
 ### v1.10.4 - 2017-01-23
 
 - [#20](https://github.com/dani8art/testing-grunt/issues/20) - Test issue for v1.10.4

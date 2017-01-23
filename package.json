@@ -1,6 +1,6 @@
 {
   "name": "registry",
-  "version": "1.10.4",
+  "version": "1.10.5",
   "description": "test project for testing gulp and grunt",
   "main": "index.js",
   "dependencies": {
@@ -14,7 +14,7 @@
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-mocha-test": "^0.13.2",
-    "grunt-release-github": "1.0.2",
+    "grunt-release-github": "1.0.3",
     "gulp": "^3.9.1",
     "gulp-header-license": "^1.0.9",
     "js-minify": "^0.1.5",
