@@ -15,7 +15,7 @@ script:
   - grunt test
 
 after_success:
-  - VERSION=$(cat .version)
+  - VERSION=$(cat .version);
     if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     docker build -t darteaga/testing-grunt .;
     docker build -t darteaga/testing-grunt:$VERSION .;
