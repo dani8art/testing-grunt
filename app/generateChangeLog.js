@@ -14,7 +14,7 @@ module.exports.updateChangelog = function (user, repository, version, callback) 
     request.get(milestonesUrl, {
         'auth': {
             'user': user,
-            'pass': process.env["GITHUB_ACCESS_TOKEN"],
+            'pass': process.env.GITHUB_ACCESS_TOKEN,
             'sendImmediately': false
         },
         headers: {
@@ -37,7 +37,7 @@ module.exports.updateChangelog = function (user, repository, version, callback) 
                     request.get(issuesUrl, {
                         'auth': {
                             'user': user,
-                            'pass': process.env["GITHUB_ACCESS_TOKEN"],
+                            'pass': process.env.GITHUB_ACCESS_TOKEN,
                             'sendImmediately': false
                         },
                         headers: {
@@ -104,6 +104,6 @@ module.exports.updateChangelog = function (user, repository, version, callback) 
             console.log("milestones request has been failed.");
             console.log(res.statusCode);
             callback();
-        };
+        }
     });
 };
