@@ -3,7 +3,7 @@
 var request = require('request'),
     promise = require('bluebird');
 
-
+//testing [ci skip]
 module.exports.updateChangelog = function (user, repository, version, callback) {
 
     var milestonesUrl = "https://api.github.com/repos/" + user + "/" + repository + "/milestones";
