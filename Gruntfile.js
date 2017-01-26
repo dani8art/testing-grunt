@@ -1,5 +1,7 @@
 'use strict';
 var milestones = require('./app/generateChangeLog.js');
+var composeManager = require('docker-composer-manager');
+
 module.exports = function (grunt) {
 
     // Load the plugin that provides the "uglify" task.
@@ -83,7 +85,7 @@ module.exports = function (grunt) {
                 afterBump: [], // optional grunt tasks to run after file versions are bumped
                 beforeRelease: [], // optional grunt tasks to run after release version is bumped up but before release is packaged
                 afterRelease: [], // optional grunt tasks to run after release is packaged
-                updateVars: [], // optional grunt config objects to update (this will update/set the version property on the object specified)
+                updateVars: ['pkg'], // optional grunt config objects to update (this will update/set the version property on the object specified)
                 github: {
                     repo: "dani8art/testing-grunt",
                     accessTokenVar: "GITHUB_ACCESS_TOKEN"
@@ -98,12 +100,16 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.registerTask('setVersionEnv', function () {
+        grunt.file.write('.version', grunt.config('pkg.version'));
+    });
+
     // Default task(s).
     grunt.registerTask('default', ['jshint', 'uglify']);
 
     grunt.registerTask('build', ['jshint', 'mochaTest', 'uglify']);
 
-    grunt.registerTask('test', ['jshint', 'mochaTest']);
+    grunt.registerTask('test', ['jshint', 'mochaTest', 'setVersionEnv']);
 
     grunt.registerTask('dev', ['watch']);
 

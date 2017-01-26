@@ -12,11 +12,14 @@ before_script:
   - npm install grunt-cli -g
 
 script:
-  - npm test
+  - grunt test
 
 after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && ["$TRAVIS_MERGE_PULL_REQUEST" == "false"]; then
+  - VERSION=$(cat .version)
+    if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     docker build -t darteaga/testing-grunt .;
+    docker build -t darteaga/testing-grunt:$VERSION .;
     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
     docker push darteaga/testing-grunt;
+    docker push darteaga/testing-grunt:$VERSION;
     fi
