@@ -1,3 +1,7 @@
+### v1.10.9 - 2017-01-26
+
+- [#24](https://github.com/dani8art/testing-grunt/issues/24) - test if only push when is a push over master branch
+
 ### v1.10.8 - 2017-01-26
 
 ### v1.10.7 - 2017-01-23
