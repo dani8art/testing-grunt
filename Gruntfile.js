@@ -88,7 +88,8 @@ module.exports = function (grunt) {
                 updateVars: ['pkg'], // optional grunt config objects to update (this will update/set the version property on the object specified)
                 github: {
                     repo: "dani8art/testing-grunt",
-                    accessTokenVar: "GITHUB_ACCESS_TOKEN"
+                    accessTokenVar: "GITHUB_ACCESS_TOKEN",
+                    usernameVar: "GITHUB_USERNAME"
                 }
             }
         },
