@@ -1,3 +1,7 @@
+### v1.10.12 - 2017-01-27
+
+- [#30](https://github.com/dani8art/testing-grunt/issues/30) - testing regexp
+
 ### v1.10.11 - 2017-01-27
 
 - [#30](https://github.com/dani8art/testing-grunt/issues/30) - testing regexp
