@@ -1,3 +1,7 @@
+### v1.10.10 - 2017-01-27
+
+- [#27](https://github.com/dani8art/testing-grunt/issues/27) - Test 01 over [ci skip] 
+
 ### v1.10.9 - 2017-01-26
 
 - [#24](https://github.com/dani8art/testing-grunt/issues/24) - test if only push when is a push over master branch
