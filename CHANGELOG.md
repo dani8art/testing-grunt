@@ -1,3 +1,7 @@
+### v1.10.11 - 2017-01-27
+
+- [#30](https://github.com/dani8art/testing-grunt/issues/30) - testing regexp
+
 ### v1.10.10 - 2017-01-27
 
 - [#27](https://github.com/dani8art/testing-grunt/issues/27) - Test 01 over [ci skip] 
