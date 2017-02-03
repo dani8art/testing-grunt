@@ -5,15 +5,21 @@
   "main": "index.js",
   "dependencies": {
     "bluebird": "^3.4.7",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "set-options": "^2.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "docker-composer-manager": "0.0.3",
     "grunt": "^1.0.1",
+    "grunt-banner": "^0.6.0",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-dock": "^1.1.4",
+    "grunt-docker-io": "^0.7.0",
+    "grunt-dockerize": "0.0.1",
+    "grunt-header": "^1.1.0",
     "grunt-mocha-test": "^0.13.2",
     "grunt-release-github": "1.0.4",
     "gulp": "^3.9.1",
@@ -28,6 +34,16 @@
   "keywords": [
     "test"
   ],
-  "author": "ISA group (isagroup.us@gmail.com)",
-  "license": "GPL-3.0+"
+  "author": "ISA group",
+  "authorWeb": "http://www.isa.us.es/",
+  "packageWeb": "http://registry.governify.io/",
+  "license": "GPL-3.0+",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dani8art/testing-grunt.git",
+    "github": "http://github.com/dani8art/testing-grunt"
+  },
+  "docker": {
+    "url": "https://hub.docker.com/r/darteaga/testing-grunt/"
+  }
 }

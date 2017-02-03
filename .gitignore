@@ -62,3 +62,4 @@ dist/
 # End of https://www.gitignore.io/api/node,grunt
 githubCredential.json
 .version
+.vscode/
